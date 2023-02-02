@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.left-header{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+}
+
+h1{
+    font-size: 1.25rem;
+    line-height: 25.2px;
+    color: #1C202B;
+}
+
+.notifications-number{
+    padding: 0.2rem 0.8rem;
+    color: #fff;
+    background-color: #0A327B;
+    border-radius: 0.5rem;
+    font-weight: 800;
+}
+
+.right-header{
+    color: #5E6778;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.right-header:hover{
+    color: #0A327B;
+}
+
+img{
+    max-width: 2.4375rem;
+    max-height: 2.4375rem;
+}
+
+.unread{
+    background-color: #F7FAFD;
+    border-radius: 0.5rem;
+}
+
+.notification{
+    display: flex;
+    gap: 13px;
+    padding: 1rem;
+    margin: 10px 1rem;
+    
+}
+
+.smith{
+    display: flex;
+    justify-content: space-between;
+}
+
+.smith-left{
+    display: flex;
+    gap: 19px;
+}
+
+.notification-name, .notification-time{
+    color: #939CAD;
+}
+
+.name, .post-name, .group-name{
+    font-weight: 800;
+}
+
+.post-name{
+    color: #5E6778;
+}
+
+.group-name{
+    color: #0A327B;
+}
+
+p{
+    display: inline;
+    color: #5E6778;
+}
+
+.red-pin{
+    display: inline-block;
+    width: 0.625rem;
+    height: 0.625rem;
+    background-color: red;
+    border-radius: 100%;
+    margin-left: 4px;
+}
+
+.notification-dm{
+    margin: 0.75rem 0rem;
+    padding: 1rem;
+    color: #5E6778;
+    border: 1px solid #b4ceec;
+    border-radius: 0.5rem;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.notification-dm:hover{
+    background-color: #b4ceec;
+}
+
+
+@media only screen and (min-width: 550px){
+    *{
+        font-size: 1rem;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(211, 68%, 94%);
+    }
+
+    .container{
+        max-width: 50rem;
+        max-height: 62.5rem;
+        margin: 4rem 2rem;
+        padding: 0rem 1rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+   
+    img{
+        max-width: 2.8125rem;
+        max-height: 2.8125rem;
+    }
+}
